@@ -1,0 +1,15 @@
+# If you use SSH to authenticate with github
+git clone git@github.com:schelterlabs/deml-<yourusername>.git
+# Otherwise
+git clone https://github.com/schelterlabs/deml-<yourusername>.git
+
+# Add the tasks and assignments repository as remote
+cd deml-<yourusername>
+git remote add lab-tasks-repo git@github.com:schelterlabs/deml-lab.git
+git remote set-url lab-tasks-repo --push DISABLE
+
+# Setup the repository
+git fetch lab-tasks-repo
+checkout -b lab-tasks lab-tasks-repo/master
+git checkout master
+git push -u origin
