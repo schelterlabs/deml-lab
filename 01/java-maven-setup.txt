@@ -1,0 +1,34 @@
+# Check if installed
+mvn -version
+java -version
+
+# If not, download from maven, extract it and move it from downloads to application
+mv apache-maven-3.5.4 /Applications/
+
+# For JAVA, download from Google Drive and follow instructions
+
+
+# for Mac users. Return to your home user directory, 
+# and use your favorite editor to open .bash_profile. 
+# If there isn't one, create one.
+
+vi .bash_profile
+
+## add the following JAVA path to your bash file.
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+## add the following MAVEN path to your bash file.
+export M2_HOME=/Applications/apache-maven-3.6.2
+export PATH=$PATH:$M2_HOME/bin
+
+# source the bash file.
+source .bash_profile
+
+# test that the path is successfully set.
+echo $JAVA_HOME
+
+# or for Maven
+echo $M2_HOME
+
+# something like this should be returned
+/Library/Java/JavaVirtualMachines/jdk1.8.0_221.jdk/Contents/Home
