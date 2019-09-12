@@ -15,6 +15,6 @@ git remote set-url lab-tasks-repo --push DISABLE
 
 # Setup the repository
 git fetch lab-tasks-repo
-checkout -b lab-tasks lab-tasks-repo/master
+git checkout -b lab-tasks lab-tasks-repo/master
 git checkout master
 git push -u origin
