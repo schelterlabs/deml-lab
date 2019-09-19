@@ -22,4 +22,6 @@ You can execute this task via ```python task2.py```. The goal of this task is to
 
 You will work on a pandas dataframe, and your goal is to learn a model to impute missing values for the `target_column` given the values from the other columns of the dataframe. The choice of features and model is up to you. 
 
-The model will be learned in the `fit` method of the class. For the sake of simplicity, you can assume that the dataframe only contains text columns. In the `transform` method of the class, your learned imputer should fill in missing values for the `target_column`. You can run the tests for your imputer via ```python task2.py```, you should try to achieve an accuracy greater than 0.75.
+The model will be learned in the `fit` method of the class. For the sake of simplicity, you can assume that the dataframe only contains text columns. In the `transform` method of the class, your learned imputer should fill in missing values for the `target_column`. 
+
+As an example, we will impute the category of a product given its `review` and `title` with data taken from [products.csv](products.csv). You can run the tests for your imputer via ```python task2.py```, you should try to achieve an accuracy greater than 0.75.
