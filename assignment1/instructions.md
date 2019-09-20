@@ -2,7 +2,7 @@
 
 Update your git repository and setup the virtual environment for this assignment analogously to how you did it for the lab exercises.
 
-The assignment consists of three independent tasks. Each task features a python file to execute. In order to fullfil the assignment, you have to **implement python code in the files in the [components](components/) folder**. **Do not edit other files, especially the task files**.
+The assignment consists of three independent tasks. Each task features a python file to execute. Note that the execution might result in errors if you did not implement the require code yet. In order to fulfill the assignment, you have to **implement python code in the files in the [components](components/) folder**. **Do not edit other files, especially the task files**.
 
 ## Task 1: Data Validation
 
