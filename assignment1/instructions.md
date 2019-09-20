@@ -1,6 +1,6 @@
 ## Prerequisites
 
-Update your git repository and setup the virtual environments for this assignment analogously to how you did it for the lab exercises.
+Update your git repository and setup the virtual environment for this assignment analogously to how you did it for the lab exercises.
 
 The assignment consists of three independent tasks. Each task features a python file to execute. In order to fullfil the assignment, you have to **implement python code in the files in the [components](components/) folder**. **Do not edit other files, especially the task files**.
 
