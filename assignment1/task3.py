@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from components.trainer import create_pipeline, create_label_encoder, train_model_with_crossvalidation
 from sklearn.metrics import roc_auc_score
 
-
+# This task defines how we want to train a supervised model for some given data
 class LearningTask:
     def __init__(self,
                  target_column,
@@ -24,13 +24,22 @@ class LearningTask:
         self.hyperparam_grid = hyperparam_grid
 
 
+# We execute the learning tasks using the methods defined in trainer.py
 def execute_task(task, data, current_seed):
-    train_data, test_data = train_test_split(data, test_size=0.2)
 
+    # We split
+    train_data, test_data = train_test_split(data, test_size=0.2, random_state=current_seed)
+
+    # We create the pipeline for our task
     pipeline = create_pipeline(task)
+
+    # We obtain the fitted label encoder
     label_encoder = create_label_encoder(task, train_data)
+
+    # We invoke the model training
     model = train_model_with_crossvalidation(task, pipeline, label_encoder, train_data, current_seed)
 
+    # We compute the AUC of the model
     y_true = label_encoder.transform(test_data[task.target_column])
     y_pred = model.predict_proba(test_data)[:, 0]
     auc_score = roc_auc_score(y_true, y_pred)
@@ -41,9 +50,12 @@ def execute_task(task, data, current_seed):
     return auc_score
 
 
+# We evaluate our model on income data
 income_data = pd.read_csv('adult-sample.csv')
 
+# We run several experiments with different random seeds
 for seed in [42, 12345]:
+    
     task1 = LearningTask(
         target_column='income-per-year',
         categorical_columns=['workclass', 'occupation', 'marital-status'],
