@@ -1,12 +1,12 @@
 ## Prerequisites
 
-Update your git repository and setup the virtual environments for this assignment analogously to how you did it for the lab exercises.
+Update your git repository and setup the virtual environment for this assignment analogously to how you did it for the lab exercises.
 
-The assignment consists of three independent tasks. Each task features a python file to execute. In order to fullfil the assignment, you have to **implement python code in the files in the [components](components/) folder**. **Do not edit other files, especially the task files**.
+The assignment consists of three independent tasks. Each task features a python file to execute. Note that the execution might result in errors if you did not implement the require code yet. In order to fulfill the assignment, you have to **implement python code in the files in the [components](components/) folder**. **Do not edit other files, especially the task files**.
 
 ## Task 1: Data Validation
 
-You can execute this task via ```python task1.py```. The goal of this task is to implement a few constraints for data validation defined in the file [components/constraints.py](components/constraints.py). Each constraint applies to a pandas dataframe and tests certain conditions on the contained data (or a specific column)
+You can execute this task via ```python task1.py```. The goal of this task is to implement a few constraints for data validation defined in the file [components/constraints.py](components/constraints.py). Each constraint applies to a pandas dataframe and tests certain conditions on the contained data (or a specific column) of some [demographic income data](adult-sample.csv).
 
  * `HasAtLeastNumRecords`: checks that the dataframe has at least a given number of records
  * `NotNull`: checks that a column contains no null values
