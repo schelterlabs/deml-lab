@@ -31,7 +31,7 @@ for seed in [42, 129, 788, 555, 123456]:
     to_impute.category = np.nan
 
     # We have the imputer fill in the missing values
-    imputed = imputer.transform(test_data)
+    imputed = imputer.transform(to_impute)
 
     # We compute the accuracy of the imputer by comparing the filled in values to the correct ones
     imputed['correct__'] = test_data[column_to_impute]
