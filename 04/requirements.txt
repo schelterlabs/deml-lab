@@ -1,0 +1,5 @@
+numpy==1.17.2
+pandas==0.25.1
+jupyter==1.0.0
+apache-beam==2.15.0
+
