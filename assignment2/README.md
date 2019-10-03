@@ -1,6 +1,10 @@
 ## Task 1: Data Validation with Google TFX
 
-https://github.com/tensorflow/data-validation/blob/80809cd738fd1178f6c0334b0e4f4e644f445139/tensorflow_data_validation/anomalies/schema_test.cc
+The goal of this task is to use [Tensorflow Data Validation](https://www.tensorflow.org/tfx/guide/tfdv) to validate two sets of data files about products and ratings in the [data](data/) folder. 
+
+We assume that all products data files are valid except for `products-data-3.tsv`. Additionally, we assume that `ratings-2.tsv` and `ratings-3.tsv` have anomalies.
+
+Eyeballing the data should help you identify differences between the individual files. We ask you use **tfdv**  to infer a schema from the data, adjust the schema if necessary and ensure that your code correctly identifies the files with data anomalies. Use `python task1.py` to execute this task and implement your solution in [components/schema_validation.py]. Looking at this [test code](https://github.com/tensorflow/data-validation/blob/80809cd738fd1178f6c0334b0e4f4e644f445139/tensorflow_data_validation/anomalies/schema_test.cc) from Tensorflow might help you identify schema constraints that are helpful for this task.
 
 
 ## Task 2: Parallel Data Processing with Apache Beam
