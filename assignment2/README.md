@@ -9,7 +9,7 @@ Eyeballing the data should help you identify differences between the individual 
 
 ## Task 2: Parallel Data Processing with Apache Beam
 
-Next, you will have implement a parallel data preprocessing job using [Apache Beam](https://beam.apache.org). The input data consists of product descriptions in the file [products-data-0-tsv](data/products-data-0.tsv) with the schema `identifier, category, description` and of product ratings in the file [ratings-0.tsv](data/ratings-0.tsv) with the schema `identifier, rating`.
+Next, you will have implement a parallel data preprocessing job using [Apache Beam](https://beam.apache.org). The input data consists of product descriptions in the file [products-data-0.tsv](data/products-data-0.tsv) with the schema `identifier, category, description` and of product ratings in the file [ratings-0.tsv](data/ratings-0.tsv) with the schema `identifier, rating`.
 
 You Beam job should conduct the following operations:
   1. Conduct an equi-join on both inputs using the join key `identifier`
@@ -23,15 +23,15 @@ Use `python task2.py` to execute this task and implement your solution in [compo
 
 ## Task 3: Implement your own MapReduce Engine
 
+In this task, you have to implement your own simple MapReduce engine. Note that instead of the typical case of implementing the functions `f_m` and `f_r` that are executed by the MapReduce engine, this task has a different setup. The functions `f_m` and `f_r` are given for a simple wordcount algorithm and you have to implement the underlying runtime that applies them to the input data, according to the MapReduce paradigm.
 
-Check MapReduceEngine.execute
+Use `python task3.py` to execute this task and implement your solution in [components/mapreduce.py](components/mapreduce.py). You have to implement methods to run the typical three phases of a MapReduce job: 
 
-(1) Run the map-phase: for each partition, transform each input record with f_r
-(2) Run the shuffle-phase: create as many output partitions as we have reducers, all records with the same key must 
-land in the same group in the same partition
-(3) Run the reduce phase: apply f_r to every group in every partition
+ 1. Run the [map-phase](https://github.com/schelterlabs/deml-lab/blob/master/assignment2/components/mapreduce.py#L28): for each partition, transform each input record with `f_r`
+ 2. Run the [shuffle-phase](https://github.com/schelterlabs/deml-lab/blob/master/assignment2/components/mapreduce.py#L33): create as many output partitions as we have reducers, and ensure that all records with the same key are put into the same group in the same partition
+ 3. Run the [reduce phase](https://github.com/schelterlabs/deml-lab/blob/master/assignment2/components/mapreduce.py#L37): apply `f_r` to every group in every partition
 
-Your change does not need to be parallel or efficient
+Note that your implementation does not need to run in parallel or be efficient or be able to handle large datasets.
 
 ## Task 4: Parallel Linear Regression with MapReduce
 
