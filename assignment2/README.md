@@ -35,4 +35,6 @@ Your change does not need to be parallel or efficient
 
 ## Task 4: Parallel Linear Regression with MapReduce
 
+![](regression.png)
+
 use result_key() as the name for the model in the final result
