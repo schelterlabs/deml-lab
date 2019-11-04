@@ -1,0 +1,4 @@
+https://github.com/OpenRefine/OpenRefine/releases/download/3.2/openrefine-linux-3.2.tar.gz
+https://github.com/OpenRefine/OpenRefine/releases/download/3.2/openrefine-mac-3.2.dmg
+https://github.com/OpenRefine/OpenRefine/releases/download/3.2/openrefine-win-3.2.zip
+
