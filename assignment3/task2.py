@@ -34,7 +34,7 @@ iris_pipeline = Pipeline(steps=[
     ('classifier', DecisionTreeClassifier())])
 
 iris_model = iris_pipeline.fit(iris_dataset.data, iris_dataset.target)
-iris_graph = pipeline_to_dataflow_graph(iris_model)
+iris_graph = pipeline_to_dataflow_graph(iris_model, parent_vertices=[])
 
 assert len(iris_graph) == 2
 
