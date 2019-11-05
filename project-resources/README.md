@@ -24,3 +24,20 @@ Compressed file with the [partitioned datasets](partitioned-data.zip) for the fl
 [Auto-Sklearn](https://automl.github.io/auto-sklearn/master/), an AutoML library based on scikit-learn.
 
 [Google AutoML Tables](https://cloud.google.com/automl-tables/) as an example of an industrial-scale AutoML service.
+
+### (8) Fairness Labels
+
+Please talk to Ke for details.
+
+### (9) Data Loading for Breast-Cancer Screening
+
+Please talk to Jason for details.
+
+### (10) Web-fronted for the "Amnesia" Recommender System
+
+ * [Short paper](https://drive.google.com/file/d/17M6k_b94stLyPB6LHOq9td2pRDAmREr8/view) on the approach
+ * [Slides](https://drive.google.com/file/d/1FU4svEaLb6a5v8CI4tl4YQpv4Cr4DUei/view) and [Video](https://www.youtube.com/watch?v=tRyX-aFjUEU) presenting the topic
+ 
+ Please talk to me for details.
+
+
