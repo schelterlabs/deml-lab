@@ -1,6 +1,6 @@
 ## Optional assignment for extra credits (max. 10 points)
 
-**Task**: Create a tutorial for an open source project relevant to the course, using publicly available data.
+**Task**: Create a **tutorial notebook for an open source project relevant to the course**, using **publicly available data**, similar to the example notebooks we worked on in the labs.
 
 You should create a **single jupyter notebook with comments and stepwise instructions** to apply one of 
 the following open source libraries on **a publicly available small dataset**:
