@@ -1,0 +1,210 @@
+\documentclass[sigconf,10pt]{acmart}
+
+\usepackage{booktabs} % For formal tables
+
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{amsmath}
+%\usepackage[ruled,linesnumbered]{algorithm2e}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{listings}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{blindtext}
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+
+\usepackage{listings}
+% Python style for highlighting
+\definecolor{darkgray}{rgb}{0.33, 0.33, 0.33}
+
+
+\lstnewenvironment{Python}[1][]
+  {\lstset{language=Python,
+    basicstyle      = \footnotesize\ttfamily,
+    keywordstyle    = \color{blue},
+    keywordstyle    = [2] \color{teal}, % just to check that it works
+    stringstyle     = \color{magenta},
+    literate={ü}{{\"u}}1 {ö}{{\"o}}1 {É}{{\'E}}1 {œ}{{\oe}}1,
+    commentstyle    = \color{darkgray}\ttfamily,  
+           morekeywords=as,
+           morekeywords=with,
+           #1}%           
+  }
+  {}
+
+\lstset{}
+
+\usepackage{tcolorbox}
+\usepackage{soul}
+
+\newcommand{\todo}[1]{\textcolor{magenta}{[#1]}}
+
+
+%\newcommand{\revcmt}[1]{\begin{tcolorbox}[boxrule=1pt, boxsep=4pt,left=3pt,right=3pt,top=2pt,bottom=2pt]\noindent\textit{#1}\end{tcolorbox}}
+
+\definecolor{charcoal}{rgb}{0.21, 0.27, 0.31}
+\newcommand{\revcmt}[1]{\noindent\textit{\textcolor{charcoal}{#1}}}
+
+\DeclareTextFontCommand{\texttt}{\ttfamily\hyphenchar\font=45\relax}
+
+% Copyright
+%\setcopyright{none}
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+\setcopyright{rightsretained}
+%\setcopyright{usgov}
+%\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+
+% DOI
+\acmDOI{10.475/123_4}
+
+% ISBN
+\acmISBN{123-4567-24-567/08/06}
+
+%Conference
+\acmConference[Data Engineering for Machine Learning Course]{ACM SIGMOD}{2019}{NYU}
+\acmYear{2019}
+\copyrightyear{2019}
+
+
+\acmArticle{4}
+\acmPrice{15.00}
+
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+\title{Team X: Name of the Project}
+
+\author{Student~1, Student~2, Student~3, Student~4}
+\affiliation{%
+  \institution{New York University}
+}
+\email{{netid1,netid2,netid3,netid4}@nyu.edu}
+
+%\renewcommand{\shortauthors}{Schelter et al.}
+
+\begin{document}
+
+\begin{abstract}
+\todo{Summarize your project paper in about a quarter of a page} \blindtext
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+\todo{Describe your project, why it is important, why it is difficult and summarize how you approached it and which final results you got. The introduction should fill up the first page.}
+
+\blindtext
+
+\blindtext
+
+\blindtext
+
+\blindtext
+
+\todo{Summarize three achievements of your project}
+\begin{itemize}
+  \item \todo{Achievement 1}
+  \item \todo{Achievement 2}
+  \item \todo{Achievement 3} 
+\end{itemize}  
+
+\newpage
+
+\section{Problem Statement \& Approach}
+
+\todo{While the introduction gives the high-level view, this section should go into details and state the problem and the approach (modeling decisions, algorithms, system design, etc) that you took.}
+
+\subsection{Problem Statement}
+
+\todo{Try to briefly and concisely describe the problem that you are trying to solve}
+
+\blindtext
+
+\blindtext
+
+\subsection{Approach}
+
+\todo{Try to briefly and concisely describe the approach that you took to solve our project problem. Try to be generic here. Feel free to use diagrams and figures here.}
+
+\blindtext
+
+\blindtext
+
+\blindtext
+
+\section{Implementation}
+
+\todo{Describe in detail how you implemented your solution, here you can talk about software libraries, implementations details, etc.}
+
+\blindtext
+
+\blindtext
+
+\blindtext
+
+\section{Evaluation}
+
+\subsection{Experimental Setup}
+
+\todo{Describe which infrastructure (machine, operating system, library versions) you used for your experiments}
+
+\blindtext
+
+\subsection{Datasets}
+
+\todo{Describe which datasets you used for your experiments}
+
+\blindtext
+
+
+\subsection{Results}
+
+\todo{Describe which experiments you ran, which baselines you used, create tables or figures for the results and discuss your findings.}
+
+\blindtext
+
+\blindtext
+
+\blindtext
+
+
+\section{Discussion}
+
+\todo{Summarize your project and the outcome. What went well? What were unexpected difficulties? What would be the next steps to take if you had more time for the project?}
+
+\blindtext
+
+\blindtext
+
+
+\section{Detailed Contributions}
+
+\todo{Summarize the contributions of every student to the project. Give pointers to the other parts of the paper. For example, explain who implement which parts of the software, who collected and prepared data, who tried different algorithms, etc.}
+
+\subsection{Student 1}
+
+\blindtext
+
+\subsection{Student 2}
+
+\blindtext
+
+\subsection{Student 3}
+
+\blindtext
+
+\subsection{Student 4}
+
+\blindtext
+
+
+\end{document}
