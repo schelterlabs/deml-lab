@@ -1,6 +1,6 @@
 numpy==1.17.2
 pandas==0.25.1
-tensorflow==1.15.2
+tensorflow==2.5.3
 tensorflow-data-validation==0.13.0
 jupyter==1.0.0
 
