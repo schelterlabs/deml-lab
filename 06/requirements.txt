@@ -1,5 +1,5 @@
 numpy==1.17.2
 pandas==0.25.1
-tensorflow==1.15.2
+tensorflow==2.6.4
 tensorflow-transform==0.14.0
 jupyter==1.0.0
