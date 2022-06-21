@@ -1,4 +1,4 @@
-numpy==1.17.2
+numpy==1.22.0
 pandas==0.25.1
 tensorflow==1.15.2
 tensorflow-transform==0.14.0
